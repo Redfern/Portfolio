@@ -3,10 +3,12 @@ import styled from 'styled-components';
 
 const FooterStyles = styled.div`
     padding: 20px;
-    text-align: center;
+    margin: 0 auto;
 
     ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
     }
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledJob = styled.div`
-    padding: 20px;
+    padding: 20px 0;
 `;
 
 const Job = ({ title, place, years, description }) => (
