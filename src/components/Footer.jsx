@@ -19,6 +19,7 @@ const Footer = () => (
             <ul>
                 <li><b>Email:</b> redfern[at]gmail.com</li>
                 <li><b>Github:</b> <a href="https://www.github.com/Redfern" rel="noopener noreferrer" target="_blank">https://www.github.com/Redfern</a></li>
+                <li><b>LinkedIn:</b> <a href="https://uk.linkedin.com/in/neilredfern" rel="noopener noreferrer" target="_blank">https://uk.linkedin.com/in/neilredfern</a></li>
             </ul>
         </div>
     </FooterStyles>

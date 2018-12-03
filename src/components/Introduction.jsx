@@ -2,16 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 
 const IntroductionStyles = styled.div`
-    padding: 20px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+    @media ${props => props.theme.bootstrapBreakpoints.large} {
+        margin: 0px 200px;
+        margin-top: 40px;
+    }
 `;
 
 const Introduction = () => (
     <IntroductionStyles>
         <p>
-            I have been developing websites since 2008 professionally and I am currently working for Betfred as a Contract ReactJs and C# Developer. Over my career I have worked in all aspects of the web development stack including frontend development, ux, design, back end development using various languages, database, server management, mobile development and more.
-        </p>
-        <p>
-            I love working with the latest technology, and thrive to find a better and more efficent way of programming. 
+            I am a full stack web developer, I love working with the latest technologies and helping teams deliver the best product possible.
         </p>
     </IntroductionStyles>
 );

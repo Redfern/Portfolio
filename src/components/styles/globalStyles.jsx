@@ -10,6 +10,21 @@ const GlobalStyles = createGlobalStyle`
     body {
         overflow-x: hidden;
         height: 100%;
+        color: #888888;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    h2 {
+        color: #000000;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted #ff7878;
+        text-align: center;
+    }
+
+    h3 {
+        color: #655a5e;
     }
 `;
 

@@ -1,44 +1,65 @@
 import React from 'react';
 import styled from 'styled-components';
+import { skills } from '../data/skills.json';
 
 const SkillsStyles = styled.div`
     padding: 20px;
+
+    .title {
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .keywords {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            float: left;
+            margin-right: 10px;
+
+            &:after {
+                content: ', '
+            }
+
+            &:last-of-type {
+                &:after {
+                    content: ' '
+                }
+            }
+        }
+    }
+`;
+
+const StyledSkill = styled.div`
+    margin-bottom: 10px;
 `;
 
 
 const Skills = () => (
     <SkillsStyles>
-        <h2>What i do</h2>
+        <h2>Skills</h2>
         <div>
-            <h3>Front end</h3>
-            <div>
-                SASS, ReactJs, Javascript, ES6
-            </div>
-
-            <h3>Back end</h3>
-            <div>
-                C#, dot net core, VB.Net, PHP, NodeJs
-            </div>
-
-            <h3>Apps</h3>
-            <div>
-                Phonegap, Objective-C
-            </div>
-
-            <h3>CMS</h3>
-            <div>
-                Umbraco, Sitecore, Telligent, Immediacy and Contentful 
-            </div>
-
-            <h3>Infrastructure / Cloud</h3>
-            <div>
-                AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway), Jenkins, TeamCity, GO CD
-            </div>
-
-            <h3>Tools</h3>
-            <div>
-                Jira, Mingle, Trello, Physical Kanban Board
-            </div>
+            {
+                skills.map((item, index) => (
+                    <StyledSkill className="row">
+                        <div className="col-12 col-md-3 title">{item.title}</div>
+                        <div className="col-12 col-md-9">
+                            <ul className="keywords">
+                                {item.skills.map((skill, index) => (
+                                    <li>
+                                        {skill}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </StyledSkill>
+                ))
+            }
         </div>
     </SkillsStyles>
 );
