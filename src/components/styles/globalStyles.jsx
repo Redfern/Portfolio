@@ -17,9 +17,9 @@ const GlobalStyles = createGlobalStyle`
     h2 {
         color: #000000;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         padding-bottom: 10px;
-        border-bottom: 1px dotted #ff7878;
+        border-bottom: 2px dotted #ff5c5c;
         text-align: center;
     }
 
