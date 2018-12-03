@@ -5,6 +5,7 @@ import Jobs from './components/Jobs.jsx';
 import Footer from './components/Footer.jsx';
 import GlobalStyles from './components/styles/globalStyles.jsx';
 import Skills from './components/Skills.jsx';
+import Projects from './components/Projects.jsx';
 
 const theme = {
   bootstrapBreakpoints: {
@@ -25,6 +26,7 @@ class App extends Component {
             <Header />
             <Skills />
             <Jobs />
+            <Projects />
             <Footer />
           </React.Fragment>
         </ThemeProvider>
