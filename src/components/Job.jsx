@@ -19,10 +19,16 @@ const StyledJob = styled.div`
     }
 
     .years {
-        text-align: right;
-        float: right;
+        text-align: left;
+        margin-top: 10px;
         color: #086f25;
         font-weight: bold;
+
+        @media ${props => props.theme.bootstrapBreakpoints.medium} {
+            text-align: right;
+            float: right;
+            margin-top: 0;
+        }
     }
 `;
 
@@ -35,7 +41,7 @@ const Job = ({ title, place, years, description }) => (
                 <span className="place">{place}</span>
             </div>
             <div className="col-12 col-md-6">
-                <span className="years">{years}</span>
+                <div className="years">{years}</div>
             </div>
         </div>
         <div className="description">{description}</div>
