@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         overflow-x: hidden;
         height: 100%;
-        color: #888888;
+        color: #676767;
         font-family: 'Noto Sans TC', sans-serif;
     }
 
@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a, a:visited, a:hover {
-        color: #00a9ff;
+        color: #006CFF;
     }
 `;
 

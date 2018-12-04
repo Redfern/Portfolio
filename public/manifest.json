@@ -2,8 +2,9 @@
  "name": "Neil Redfern - Full Stack Website Developer",
  "short_name": "Neil Redfern",
  "display": "fullscreen",
- "background_color": "#fffffff",
- "theme_color": "#ffffff",
+ "theme_color": "white",
+ "background_color": "white",
+ "description": "I am a full stack website / software developer, I love working with the latest technologies and helping teams deliver the best product possible.",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -40,6 +41,12 @@
    "sizes": "192x192",
    "type": "image\/png",
    "density": "4.0"
-  }
+  },
+  {
+    "src": "\/favicon-512x512.png",
+    "sizes": "512x512",
+    "type": "image\/png",
+    "density": "4.0"
+   }
  ]
 }
