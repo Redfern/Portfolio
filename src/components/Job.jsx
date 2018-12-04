@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
 
 const StyledJob = styled.div`
     padding: 20px 0;
@@ -44,7 +45,7 @@ const Job = ({ title, place, years, description }) => (
                 <div className="years">{years}</div>
             </div>
         </div>
-        <div className="description">{description}</div>
+        <div className="description"><ReactMarkdown source={description} linkTarget="_blank" /></div>
     </StyledJob>
 );
 

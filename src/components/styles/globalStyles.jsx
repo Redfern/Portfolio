@@ -26,6 +26,10 @@ const GlobalStyles = createGlobalStyle`
     h3 {
         color: #655a5e;
     }
+
+    a, a:visited, a:hover {
+        color: #00a9ff;
+    }
 `;
 
 export default GlobalStyles;

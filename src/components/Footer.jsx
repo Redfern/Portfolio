@@ -13,11 +13,7 @@ const FooterStyles = styled.div`
 
         li {
             margin-bottom: 10px;
-
-            a, a:visited {
-                color: #00a9ff;
-            }
-
+            
             i {
                 margin-right: 10px;
             }
