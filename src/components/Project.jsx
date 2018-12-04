@@ -20,8 +20,11 @@ const StyledProject = styled.div`
     }
 
     img {
+        max-height: 300px;
+        margin: 0 auto;
+        display: block;
         margin-bottom: 10px;
-        width: 100%;
+        border-radius: 20px;
     }
 
     .link {

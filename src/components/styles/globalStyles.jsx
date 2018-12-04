@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         color: #676767;
         font-family: 'Noto Sans TC', sans-serif;
+        background-color: white;
     }
 
     h2 {
