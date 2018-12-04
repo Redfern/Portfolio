@@ -1,5 +1,9 @@
 {
- "name": "App",
+ "name": "Neil Redfern - Full Stack Website Developer",
+ "short_name": "Neil Redfern",
+ "display": "fullscreen",
+ "background_color": "#fffffff",
+ "theme_color": "#ffffff",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

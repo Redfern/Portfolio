@@ -45,8 +45,14 @@ const Job = ({ title, place, years, description }) => (
                 <div className="years">{years}</div>
             </div>
         </div>
-        <div className="description"><ReactMarkdown source={description} linkTarget="_blank" /></div>
+        <div className="description"><ReactMarkdown source={description} renderers={{link : markdownLinkRenderer}} /></div>
     </StyledJob>
 );
+
+const markdownLinkRenderer = (props) => {
+    return props.href.startsWith("/") ?
+      <a href={props.href}>{props.children}</a> :
+      <a href={props.href} target="_blank" rel="nofollow noopener noreferrer">{props.children}</a>;
+  }
 
 export default Job;
