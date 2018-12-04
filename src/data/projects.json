@@ -15,7 +15,7 @@
         {
             "title": "Pub Golf Scorecard",
             "image": "pub-golf_hand.jpg",
-            "url": "http://www.pubgolfscorecard.co.uk",
+            "url": "https://www.pubgolfscorecard.co.uk",
             "description": "A website I created a number of years ago, wrote in PHP with a MySql database."
         }
     ]
