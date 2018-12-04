@@ -33,6 +33,7 @@ const Footer = () => (
                 <li><i className="fas fa-at"></i> <a href="mailto:redfern@gmail.com">redfern[at]gmail.com</a></li>
                 <li><i className="fab fa-github"></i> <a href="https://www.github.com/Redfern" rel="noopener noreferrer" target="_blank">https://www.github.com/Redfern</a></li>
                 <li><i className="fab fa-linkedin-in"></i> <a href="https://uk.linkedin.com/in/neilredfern" rel="noopener noreferrer" target="_blank">https://uk.linkedin.com/in/neilredfern</a></li>
+                <li><i className="fab fa-wordpress-simple"></i> <a href="http://neil.red/" rel="noopener noreferrer" target="_blank">http://neil.red</a></li>
             </ul>
         </div>
     </FooterStyles>

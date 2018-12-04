@@ -3,13 +3,13 @@
         {
             "title": "Front end",
             "skills": [
-                "SASS", "ReactJs", "Javascript", "ES6"
+                "HTML5", "SASS", "ReactJs", "Javascript", "ES6"
             ]
         },
         {
             "title": "Back end",
             "skills": [
-                "C#", "dot net core", "VB.Net", "PHP", "NodeJs"
+                "C#", "dot net core", "NodeJs", "PHP", "VB.Net"
             ]
         },
         {
@@ -31,9 +31,21 @@
             ]
         },
         {
+            "title": "OS",
+            "skills": [
+                "Windows", "OSX", "Linux"
+            ]
+        },
+        {
             "title": "Tools",
             "skills": [
                 "Jira", "Mingle", "Trello", "Physical Kanban Board"
+            ]
+        },
+        {
+            "title": "Working",
+            "skills": [
+                "XP", "Mob programming", "Pair programming", "Agile", "TDD"
             ]
         }
     ]
