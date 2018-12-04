@@ -10,12 +10,8 @@ const HeaderStyles = styled.div`
     background-size: cover;
     background-position: center;
 
-    @media ${props => props.theme.bootstrapBreakpoints.medium} {
-        height: 40vh;
-    }
-
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: #000;
         font-weight: bold;
         text-align: center;

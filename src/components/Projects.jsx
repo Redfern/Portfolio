@@ -16,7 +16,7 @@ const Projects = () => (
         <h2>Personal projects</h2>
         <div className="row">
         {
-            projects.map(item => <Project {...item} />)
+            projects.map(item => <Project key={item.title} {...item} />)
         }
         </div>
     </StyledProjects>

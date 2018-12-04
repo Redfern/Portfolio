@@ -45,13 +45,13 @@ const Skills = () => (
         <h2>Skills</h2>
         <div>
             {
-                skills.map((item, index) => (
-                    <StyledSkill className="row">
+                skills.map((item) => (
+                    <StyledSkill key={item.title} className="row">
                         <div className="col-12 col-md-3 title">{item.title}</div>
                         <div className="col-12 col-md-9">
                             <ul className="keywords">
                                 {item.skills.map((skill, index) => (
-                                    <li>
+                                    <li key={index}>
                                         {skill}
                                     </li>
                                 ))}
