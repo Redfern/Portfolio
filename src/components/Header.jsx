@@ -9,7 +9,6 @@ const HeaderStyles = styled.div`
     background-image: url('../static/japan.jpeg');
     background-size: cover;
     background-position: center;
-    width: 100%;
 
     h1 {
         font-size: 2.5rem;

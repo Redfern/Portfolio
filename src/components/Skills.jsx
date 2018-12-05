@@ -59,11 +59,11 @@ const StyledSkill = styled.div`
 
 const Skills = () => (
     <React.Fragment>
-        <h2>Skills</h2>
         <SkillsStyles>
+        <h2>Skills</h2>
                 {
                     skills.map((item) => (
-                        <StyledSkill key={item.title} className="row">
+                        <StyledSkill key={item.title}>
                             <div className="title">{item.title}</div>
                             <div className="keywords">
                                 <ul>
