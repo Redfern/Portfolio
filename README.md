@@ -2,7 +2,7 @@ My portfolio as a software developer, wrote in React.
 
 ## Made using
 
-ReactJs (create-react-app), Styled Components, Bootstrap and Font Awesome for icons.
+ReactJs (create-react-app), Styled Components for styles and Font Awesome for icons.
 
 ## How to run
 

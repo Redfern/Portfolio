@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
         color: #676767;
         font-family: 'Noto Sans TC', sans-serif;
         background-color: white;
+        margin: 0;
+        padding: 0;
     }
 
     h2 {

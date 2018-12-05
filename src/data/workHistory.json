@@ -9,7 +9,7 @@
       },
       {   
           "id": 2, 
-          "title": "Contact C# Developer", 
+          "title": "Contract C# Developer", 
           "place": "Stockport Council",
           "years": "May 2016 - December 2017",
           "description": "Working on revamping the [www.stockport.gov.uk](https://www.stockport.gov.uk \"Stockport Council Website\") website using the latest tech stack: .Net Core, MVC 6, TDD, Moq, Contentful, Docker, AWS, SASS, Gulp, Agile, Scrum, Kanban, Git, Coding in the open (partial open source), CI, Pair Programming and more. While working here I helped create a public rest api for the stockport website, this included rate limiting, versioning, confirming the urls to rest standards, api keys, swagger integration."

@@ -3,10 +3,22 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
 const StyledJob = styled.div`
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 
     .top {
         margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch; 
+    }
+
+    .title-place {
+        flex-basis: 100%;
+
+        @media ${props => props.theme.bootstrapBreakpoints.medium} {
+            flex-basis: 50%;
+        }
     }
 
     .title {
@@ -24,10 +36,11 @@ const StyledJob = styled.div`
         margin-top: 10px;
         color: #086f25;
         font-weight: bold;
+        flex-basis: 100%;
 
         @media ${props => props.theme.bootstrapBreakpoints.medium} {
+            flex-basis: 50%;
             text-align: right;
-            float: right;
             margin-top: 0;
         }
     }
@@ -35,15 +48,13 @@ const StyledJob = styled.div`
 
 const Job = ({ title, place, years, description }) => (
     <StyledJob>
-        <div className="row top">
-            <div className="col-12 col-md-6">
+        <div className="top">
+            <div className="title-place">
                 <span className="title">{title}</span>
                 <span> - </span>
                 <span className="place">{place}</span>
             </div>
-            <div className="col-12 col-md-6">
-                <div className="years">{years}</div>
-            </div>
+            <div className="years">{years}</div>
         </div>
         <div className="description"><ReactMarkdown source={description} renderers={{link : markdownLinkRenderer}} /></div>
     </StyledJob>

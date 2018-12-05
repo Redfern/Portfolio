@@ -9,13 +9,15 @@ const HeaderStyles = styled.div`
     background-image: url('../static/japan.jpeg');
     background-size: cover;
     background-position: center;
+    width: 100%;
 
     h1 {
         font-size: 2.5rem;
         color: #000;
         font-weight: bold;
         text-align: center;
-
+        margin: 0;
+        
         @media ${props => props.theme.bootstrapBreakpoints.large} {
             font-size: 4rem;
         }
@@ -30,8 +32,8 @@ const HeaderStyles = styled.div`
 `;
 
 const Header = () => (
-    <div className="row">
-        <HeaderStyles className="col-12">
+    <div>
+        <HeaderStyles>
             <h1>Neil Redfern</h1>
             <div className="tag-line">Software Developer</div>
             <Introduction />

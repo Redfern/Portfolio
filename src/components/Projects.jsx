@@ -9,17 +9,18 @@ const StyledProjects = styled.div`
     overflow: auto;
     margin: 0 auto;
     width: 100%;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
 `;
 
 const Projects = () => (
-    <StyledProjects>
+    <React.Fragment>
         <h2>Personal projects</h2>
-        <div className="row">
-        {
-            projects.map(item => <Project key={item.title} {...item} />)
-        }
-        </div>
-    </StyledProjects>
+        <StyledProjects>
+                {projects.map(item => <Project key={item.title} {...item} />)}
+        </StyledProjects>
+    </React.Fragment>
 );
 
 export default Projects;

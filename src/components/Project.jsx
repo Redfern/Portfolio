@@ -5,12 +5,7 @@ const StyledProject = styled.div`
     margin-right: 20px;
     width: 300px;
     margin: 0 auto;
-    width: 100%;
     margin-bottom: 20px;
-
-    @media ${props => props.theme.bootstrapBreakpoints.medium} {
-        margin-bottom: 0;
-    }
 
     h3 {
         font-size: 20px;
@@ -63,16 +58,14 @@ const StyledProject = styled.div`
 `;
 
 const Project = ({title, url, description, image}) => (
-    <div className="col-12 col-md-4">
-        <StyledProject>
-            <img src={`/static/${image}`} alt={`for project ${title}`} />
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <div className="link">
-                <a href={url} target="_blank" rel="noopener noreferrer">Visit website <i className="fas fa-external-link-alt"></i></a>
-            </div>
-        </StyledProject>
-    </div>
+    <StyledProject>
+        <img src={`/static/${image}`} alt={`for project ${title}`} />
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <div className="link">
+            <a href={url} target="_blank" rel="noopener noreferrer">Visit website <i className="fas fa-external-link-alt"></i></a>
+        </div>
+    </StyledProject>
 );
 
 export default Project;

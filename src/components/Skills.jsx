@@ -4,6 +4,14 @@ import { skills } from '../data/skills.json';
 
 const SkillsStyles = styled.div`
     padding: 20px;
+`;
+
+const StyledSkill = styled.div`
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; 
 
     .title {
         font-weight: bold;
@@ -11,57 +19,66 @@ const SkillsStyles = styled.div`
         font-size: 18px;
         text-align: right;
         margin-bottom: 10px;
+
+        flex-basis: 100%;
+
+        @media ${props => props.theme.bootstrapBreakpoints.medium} {
+            flex-basis: 30%;
+        }
     }
 
     .keywords {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        flex-basis: 100%;
 
-        li {
-            float: left;
-            margin-right: 10px;
+        @media ${props => props.theme.bootstrapBreakpoints.medium} {
+            flex-basis: 65%;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
 
-            &:after {
-                content: ', '
-            }
+            li {
+                float: left;
+                margin-right: 10px;
 
-            &:last-of-type {
                 &:after {
-                    content: ' '
+                    content: ', '
+                }
+
+                &:last-of-type {
+                    &:after {
+                        content: ' '
+                    }
                 }
             }
         }
     }
 `;
 
-const StyledSkill = styled.div`
-    margin-bottom: 10px;
-`;
-
 
 const Skills = () => (
-    <SkillsStyles>
+    <React.Fragment>
         <h2>Skills</h2>
-        <div>
-            {
-                skills.map((item) => (
-                    <StyledSkill key={item.title} className="row">
-                        <div className="col-12 col-md-3 title">{item.title}</div>
-                        <div className="col-12 col-md-9">
-                            <ul className="keywords">
-                                {item.skills.map((skill, index) => (
-                                    <li key={index}>
-                                        {skill}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </StyledSkill>
-                ))
-            }
-        </div>
-    </SkillsStyles>
+        <SkillsStyles>
+                {
+                    skills.map((item) => (
+                        <StyledSkill key={item.title} className="row">
+                            <div className="title">{item.title}</div>
+                            <div className="keywords">
+                                <ul>
+                                    {item.skills.map((skill, index) => (
+                                        <li key={index}>
+                                            {skill}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </StyledSkill>
+                    ))
+                }
+        </SkillsStyles>
+    </React.Fragment>
 );
 
 export default Skills;
