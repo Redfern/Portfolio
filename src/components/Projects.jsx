@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import Project from './Project.jsx';
 import { projects } from '../data/projects.json';
 
-const StyledHeader = styled.h2`
-    padding: 20px;
-`;
-
 const StyledProjects = styled.div`
     padding: 20px;
     clear: both;
@@ -18,13 +14,10 @@ const StyledProjects = styled.div`
 `;
 
 const Projects = () => (
-    <React.Fragment>
-        
-        <StyledProjects>
+    <StyledProjects>
         <h2>Personal projects</h2>
                 {projects.map(item => <Project key={item.title} {...item} />)}
-        </StyledProjects>
-    </React.Fragment>
+    </StyledProjects>
 );
 
 export default Projects;
