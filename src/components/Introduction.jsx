@@ -6,10 +6,12 @@ const IntroductionStyles = styled.div`
     margin: 10px;
     padding: 10px;
     font-size: 20px;
+    text-align: left;
 
     @media ${props => props.theme.bootstrapBreakpoints.large} {
         margin: 0px 200px;
         margin-top: 40px;
+        text-align: center;
     }
 `;
 
