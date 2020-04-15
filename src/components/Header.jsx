@@ -17,7 +17,7 @@ const HeaderStyles = styled.div`
     text-align: center;
     margin: 0;
 
-    @media ${props => props.theme.bootstrapBreakpoints.large} {
+    @media ${(props) => props.theme.bootstrapBreakpoints.large} {
       font-size: 4rem;
     }
   }
@@ -34,7 +34,9 @@ const Header = () => (
   <div>
     <HeaderStyles>
       <h1 data-testid="header-title">Neil Redfern</h1>
-      <div className="tag-line">Software Developer</div>
+      <div className="tag-line" data-testid="header-tagline">
+        Software Developer
+      </div>
       <Introduction />
     </HeaderStyles>
   </div>
