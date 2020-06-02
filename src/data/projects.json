@@ -1,22 +1,28 @@
 {
-    "projects" : [
-        {
-            "title": "Sheffield Nights",
-            "image": "sheffield-nights_hand.jpg",
-            "url": "https://www.sheffieldnights.com",
-            "description": "A website I have ran since university, re-made around 1 year ago with a ReactJs front end and NodeJs api."
-        },
-        {
-            "title": "Cantonese Numbers",
-            "image": "cantonese-numbers_hand.jpg",
-            "url": "https://www.cantonesenumbers.co.uk",
-            "description": "A website I created to help people and myself learn numbers in cantonese. Wrote in ReactJs."
-        },
-        {
-            "title": "Pub Golf Scorecard",
-            "image": "pub-golf_hand.jpg",
-            "url": "https://www.pubgolfscorecard.co.uk",
-            "description": "A website I created a number of years ago, originally in PHP and recently re-wrote in ReactJs, Redux, Styled Components and a NodeJs api."
-        }
-    ]
+  "projects": [
+    {
+      "title": "Electricity Calculator",
+      "image": "electricity-calculator.jpg",
+      "url": "https://www.electricitycalculator.uk",
+      "description": "A react website I made to check how much electricity someone has used between two dates."
+    },
+    {
+      "title": "Sheffield Nights",
+      "image": "sheffield-nights_hand.jpg",
+      "url": "https://www.sheffieldnights.com",
+      "description": "A website I have ran since university, re-made around 1 year ago with a ReactJs front end and NodeJs api."
+    },
+    {
+      "title": "Cantonese Numbers",
+      "image": "cantonese-numbers_hand.jpg",
+      "url": "https://www.cantonesenumbers.co.uk",
+      "description": "A website I created to help people and myself learn numbers in cantonese. Wrote in ReactJs."
+    },
+    {
+      "title": "Pub Golf Scorecard",
+      "image": "pub-golf_hand.jpg",
+      "url": "https://www.pubgolfscorecard.co.uk",
+      "description": "A website I created a number of years ago, originally in PHP and recently re-wrote in ReactJs, Redux, Styled Components and a NodeJs api."
+    }
+  ]
 }
