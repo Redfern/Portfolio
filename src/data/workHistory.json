@@ -2,21 +2,21 @@
   "jobs": [
     {
       "id": 1,
-      "title": "ReactJs Contract Developer",
+      "title": "Frontend React Contract Developer",
       "place": "Sharp Gaming",
       "years": "Sep 2020 - April 2021",
       "description": "Front end react developer working on creating a brand new website for [www.betfred.com](https://www.betfred.com \"Betfred website\") and [www.oddsking.com](https://www.oddsking.com \"Oddsking website\"), the role was mainly front end but also included some node, ruby and work on a custom built cms. Skilled used: React, node, sass, redux, react testing library, jest, jenkins."
     },
     {
       "id": 2,
-      "title": "ReactJs Contract Developer",
+      "title": "Full Stack React Contract Developer",
       "place": "UK Tote Group",
       "years": "Jul 2019 - Feb 2020",
-      "description": "Full stack reactjs and node developer working on creating a brand new website and entire tech stack for the new [www.tote.co.uk](https://www.tote.co.uk \"Tote website\"), including CI, front end, back end, hosting etc. Skilled used: ReactJs, node, lambdas, styled components, circle ci, terraform, aws."
+      "description": "Full stack react and node developer working on creating a brand new website and entire tech stack for the new [www.tote.co.uk](https://www.tote.co.uk \"Tote website\"), including CI, front end, back end, hosting etc. Skilled used: ReactJs, node, lambdas, styled components, circle ci, terraform, aws."
     },
     {
       "id": 3,
-      "title": "ReactJs / C# Contract Developer",
+      "title": "React / C# Contract Developer",
       "place": "Betfred",
       "years": "Jan 2017 - Jul 2019",
       "description": "Full stack reactjs and c# developer working on new websites for the totepool brand, working on [pools.tote.co.uk](https://pools.tote.co.uk \"Totepool website\") and [www.tote.co.uk](https://www.tote.co.uk \"Tote website\"). Working with an up to date tech stack of: ReactJs, C#. dot net core, sass, styled components, nextjs, ci (teamcity), tdd, aws, elastic beanstalk, lambda, cloud formation and more"
