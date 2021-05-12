@@ -3,7 +3,7 @@
         {
             "title": "Front end",
             "skills": [
-                "HTML5", "SASS", "ReactJs", "Redux", "Javascript", "ES6"
+                "HTML5", "SASS", "ReactJs", "Redux", "Javascript", "ES6", "Typescript", "Styled Components"
             ]
         },
         {
@@ -27,7 +27,7 @@
         {
             "title": "Infrastructure / Cloud",
             "skills": [
-                "AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway)", "Jenkins", "TeamCity", "GO CD"
+                "AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway)", "Jenkins", "TeamCity", "GO CD", "Circle CI"
             ]
         },
         {
