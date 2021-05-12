@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "title": "Oyster Boys Brewing",
+      "image": "ob.jpg",
+      "url": "https://www.oysterboysbrewing.co.uk",
+      "description": "A react website I made for two youtubers who run a channel on reviewing and brewing beer."
+    },
+    {
       "title": "Electricity Calculator",
       "image": "electricity-calculator.jpg",
       "url": "https://www.electricitycalculator.uk",
