@@ -3,47 +3,54 @@
     {
       "id": 1,
       "title": "ReactJs Contract Developer",
+      "place": "Sharp Gaming",
+      "years": "Sep 2020 - April 2021",
+      "description": "Front end react developer working on creating a brand new website for [www.betfred.com](https://www.betfred.com \"Betfred website\") and [www.oddsking.com](https://www.oddsking.com \"Oddsking website\"), the role was mainly front end but also included some node, ruby and work on a custom built cms. Skilled used: React, node, sass, redux, react testing library, jest, jenkins."
+    },
+    {
+      "id": 2,
+      "title": "ReactJs Contract Developer",
       "place": "UK Tote Group",
       "years": "Jul 2019 - Feb 2020",
       "description": "Full stack reactjs and node developer working on creating a brand new website and entire tech stack for the new [www.tote.co.uk](https://www.tote.co.uk \"Tote website\"), including CI, front end, back end, hosting etc. Skilled used: ReactJs, node, lambdas, styled components, circle ci, terraform, aws."
     },
     {
-      "id": 1,
+      "id": 3,
       "title": "ReactJs / C# Contract Developer",
       "place": "Betfred",
       "years": "Jan 2017 - Jul 2019",
       "description": "Full stack reactjs and c# developer working on new websites for the totepool brand, working on [pools.tote.co.uk](https://pools.tote.co.uk \"Totepool website\") and [www.tote.co.uk](https://www.tote.co.uk \"Tote website\"). Working with an up to date tech stack of: ReactJs, C#. dot net core, sass, styled components, nextjs, ci (teamcity), tdd, aws, elastic beanstalk, lambda, cloud formation and more"
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Contract C# Developer",
       "place": "Stockport Council",
       "years": "May 2016 - December 2017",
       "description": "Working on revamping the [www.stockport.gov.uk](https://www.stockport.gov.uk \"Stockport Council Website\") website using the latest tech stack: .Net Core, MVC 6, TDD, Moq, Contentful, Docker, AWS, SASS, Gulp, Agile, Scrum, Kanban, Git, Coding in the open (partial open source), CI, Pair Programming and more. While working here I helped create a public rest api for the stockport website, this included rate limiting, versioning, confirming the urls to rest standards, api keys, swagger integration."
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Senior C# Developer",
       "place": "Reason Digital",
       "years": "December 2014 - May 2016",
       "description": "Working on various C# websites including 2 bespoke MVC solutions and an Umbraco MVC solution. Main skills used here are: C#, MVC, Entity Framework, SQL, Stored Procedures, HTML, CSS, Bootstrap, Grunt, Design Patterns, NUnit, MSTest, Dependency Injection, Moq, TeamCity, Agile, Umbraco, Git and Jira"
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Techincal Developer",
       "place": "Reading Room",
       "years": "July 2012 - December 2014",
       "description": "Mainly working as a C# developer, working with and expanding various CMS based .Net systems including: Umbraco, Sitecore, Kentico, Immedacy and Telligent."
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Developer (C#, VB.Net, Objective C)",
       "place": "Yellowbus Solutions",
       "years": "July 2010 - July 2012",
       "description": "My main responsibilities were to work and a large scale of projects developing many dynamic websites. These websites ranged from small HTML and CSS cut up websites to large dynamic data driven websites. I also worked on a few native iPhone applications using Objective-C and Xcode."
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Developer (VB.Net)",
       "place": "Club Systems",
       "years": "December 2008 - July 2010",
