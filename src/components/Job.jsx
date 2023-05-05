@@ -63,10 +63,9 @@ const Job = ({ title, place, years, description }) => (
       </div>
     </div>
     <div className="description" data-testid="job-description">
-      <ReactMarkdown
-        source={description}
-        renderers={{ link: markdownLinkRenderer }}
-      />
+      <ReactMarkdown components={{ a: markdownLinkRenderer }}>
+        {description}
+      </ReactMarkdown>
     </div>
   </StyledJob>
 );
