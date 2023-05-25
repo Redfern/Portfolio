@@ -1,53 +1,60 @@
 {
-    "skills": [
-        {
-            "title": "Front end",
-            "skills": [
-                "HTML5", "SASS", "ReactJs", "Redux", "Javascript", "ES6", "Typescript", "Styled Components"
-            ]
-        },
-        {
-            "title": "Back end",
-            "skills": [
-                "C#", "dot net core", "NodeJs", "PHP", "VB.Net"
-            ]
-        },
-        {
-            "title": "Mobile development",
-            "skills": [
-                "Phonegap", "Objective-C"
-            ]
-        },
-        {
-            "title": "CMS",
-            "skills": [
-                "Umbraco", "Sitecore", "Telligent", "Immediacy", "Contentful"
-            ]
-        },
-        {
-            "title": "Infrastructure / Cloud",
-            "skills": [
-                "AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway)", "Jenkins", "TeamCity", "GO CD", "Circle CI"
-            ]
-        },
-        {
-            "title": "OS",
-            "skills": [
-                "Windows", "OSX", "Linux"
-            ]
-        },
-        {
-            "title": "Tools",
-            "skills": [
-                "Jira", "Mingle", "Trello", "Physical Kanban Board"
-            ]
-        },
-        {
-            "title": "Working",
-            "skills": [
-                "XP", "Mob programming", "Pair programming", "Agile", "TDD", "Git"
-            ]
-        }
-    ]
-    
+  "skills": [
+    {
+      "title": "Front end",
+      "skills": [
+        "HTML5",
+        "SASS",
+        "ReactJs",
+        "Redux",
+        "Context",
+        "Javascript",
+        "ES6",
+        "Typescript",
+        "Styled Components",
+        "Cypress"
+      ]
+    },
+    {
+      "title": "Back end",
+      "skills": ["C#", "dot net core", "NodeJs", "PHP", "VB.Net"]
+    },
+    {
+      "title": "Mobile development",
+      "skills": ["Phonegap", "Objective-C"]
+    },
+    {
+      "title": "CMS",
+      "skills": ["Umbraco", "Sitecore", "Telligent", "Immediacy", "Contentful"]
+    },
+    {
+      "title": "Infrastructure / Cloud",
+      "skills": [
+        "AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway)",
+        "Jenkins",
+        "TeamCity",
+        "GO CD",
+        "Circle CI"
+      ]
+    },
+    {
+      "title": "OS",
+      "skills": ["Windows", "OSX", "Linux"]
+    },
+    {
+      "title": "Tools",
+      "skills": ["Jira", "Mingle", "Trello", "Physical Kanban Board"]
+    },
+    {
+      "title": "Working",
+      "skills": [
+        "XP",
+        "Mob programming",
+        "Pair programming",
+        "Agile",
+        "TDD",
+        "Git"
+      ]
+    }
+  ]
 }
