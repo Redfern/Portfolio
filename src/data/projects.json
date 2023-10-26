@@ -13,12 +13,6 @@
       "description": "A react website I made to check how much electricity someone has used between two dates."
     },
     {
-      "title": "Cantonese Numbers",
-      "image": "cantonese-numbers_hand.jpg",
-      "url": "https://www.cantonesenumbers.co.uk",
-      "description": "A website I created to help people and myself learn numbers in cantonese. Wrote in ReactJs."
-    },
-    {
       "title": "Pub Golf Scorecard",
       "image": "pub-golf_hand.jpg",
       "url": "https://www.pubgolfscorecard.co.uk",
