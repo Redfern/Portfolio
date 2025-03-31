@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "title": "Best Friends Day Nursery",
+      "image": "bestfriends.jpg",
+      "url": "https://www.bestfriendsdaynurserychester.co.uk",
+      "description": "A react website I made for a nursery in Chester."
+    },
+    {
       "title": "Oyster Boys Brewing",
       "image": "ob.jpg",
       "url": "https://www.oysterboysbrewing.co.uk",
