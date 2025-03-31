@@ -1,9 +1,15 @@
 {
   "jobs": [
     {
+      "title": "C# Full Stack Senior Developer",
+      "place": "Money Means",
+      "years": "September 2024 - April 2025",
+      "description": "C# Full stack permanent developer creating a website for Money Means using Blazor, C#, Tailwind, Github Actions for CI and Playwright for E2E testing. Leaving due to the entire development team being made redundant."
+    },
+    {
       "title": "Full Stack Senior Developer",
       "place": "Vortex IOT",
-      "years": "December 2023 - Present",
+      "years": "December 2023 - September 2024",
       "description": "Full stack permanent developer creating and adapting internal portal websites to create and manage devices which is one of the companies main products. My main task has been to improve a internal NextJs website by improving the look and feel and the UX of how the site works. I improved the website by upgrading packages, removing redundant packages, giving the website a modern look and feel, making the website fully responsive using styled components, adding in full e2e tests using Cypress, adding git hooks to prevent errors, added prettier to auto format code and more. This was all presented to management and stakeholders on a regular basis to get feedback and prioritise new and future features to be developed."
     },
     {
