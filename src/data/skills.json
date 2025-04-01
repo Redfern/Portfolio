@@ -12,8 +12,8 @@
         "ES6",
         "Typescript",
         "Styled Components",
-        "Cypress",
-        "GraphQL"
+        "GraphQL",
+        "Blazor"
       ]
     },
     {
@@ -32,6 +32,8 @@
       "title": "Infrastructure / Cloud",
       "skills": [
         "AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway)",
+        "Azure",
+        "GitHub Actions",
         "Jenkins",
         "TeamCity",
         "GO CD",
@@ -56,6 +58,10 @@
         "TDD",
         "Git"
       ]
+    },
+    {
+      "title": "E2E Testing",
+      "skills": ["Playwright", "Cypress", "Selenium", "TestCafe"]
     }
   ]
 }
