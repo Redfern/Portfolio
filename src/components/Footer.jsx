@@ -1,3 +1,6 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 const FooterStyles = styled.div`
@@ -13,7 +16,7 @@ const FooterStyles = styled.div`
     li {
       margin-bottom: 10px;
 
-      i {
+      svg {
         margin-right: 10px;
       }
     }
@@ -26,11 +29,11 @@ const Footer = () => (
     <div>
       <ul>
         <li>
-          <i className="fas fa-at"></i>{" "}
+          <FontAwesomeIcon icon={faEnvelope} />{" "}
           <a href="mailto:redfern@gmail.com">redfern[at]gmail.com</a>
         </li>
         <li>
-          <i className="fab fa-github"></i>{" "}
+          <FontAwesomeIcon icon={faGithub} />{" "}
           <a
             href="https://www.github.com/Redfern"
             rel="noopener noreferrer"
@@ -40,7 +43,7 @@ const Footer = () => (
           </a>
         </li>
         <li>
-          <i className="fab fa-linkedin-in"></i>{" "}
+          <FontAwesomeIcon icon={faLinkedin} />{" "}
           <a
             href="https://uk.linkedin.com/in/neilredfern"
             rel="noopener noreferrer"

@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 const StyledProject = styled.div`
   margin-right: 20px;
   width: 300px;
   margin: 0 auto;
   margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 76px;
 
   h3 {
     font-size: 20px;
@@ -26,6 +30,8 @@ const StyledProject = styled.div`
     width: 100%;
     text-align: center;
     margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
   }
 
   a {
@@ -37,38 +43,43 @@ const StyledProject = styled.div`
     display: block;
     margin: 0 auto;
     width: 80%;
-    background: linear-gradient(to right, #1c92d0, #00a7ff);
+    background: #f91889;
     position: relative;
     text-decoration: none;
     border: 1px solid transparent;
+    font-weight: bold;
 
     &:visited {
       color: #ffffff;
     }
 
     &:hover {
-      background: linear-gradient(to right, white, white);
-      color: #00a7ff;
-      border: 1px solid #00a7ff;
+      background: white;
+      color: #f91889;
+      border: 1px solid #f91889;
     }
 
-    i {
+    svg {
       position: absolute;
-      right: 13px;
+      right: 15px;
       top: 50%;
       margin-top: -8px;
     }
   }
 `;
 
+const Description = styled.div`
+  padding: 0 15px;
+`;
+
 const Project = ({ title, url, description, image }) => (
   <StyledProject>
     <img src={`/static/${image}`} alt={`for project ${title}`} />
     <h3>{title}</h3>
-    <p>{description}</p>
+    <Description>{description}</Description>
     <div className="link">
       <a href={url} target="_blank" rel="noopener noreferrer">
-        Visit website <i className="fas fa-external-link-alt"></i>
+        Visit website <FontAwesomeIcon icon={faSquareArrowUpRight} />
       </a>
     </div>
   </StyledProject>

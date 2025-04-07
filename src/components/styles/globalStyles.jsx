@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     html {
@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         margin-bottom: 15px;
         padding-bottom: 10px;
-        border-bottom: 2px dotted #ff5c5c;
+        border-bottom: 2px solid #f91889;
         text-align: center;
     }
 
@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a, a:visited, a:hover {
-        color: #006CFF;
+        color: #f91889;
     }
 `;
 

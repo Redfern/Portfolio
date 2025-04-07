@@ -12,13 +12,19 @@ const StyledProjects = styled.div`
   justify-content: center;
 `;
 
+const SectionContainer = styled.div`
+  padding: 20px;
+`;
+
 const Projects = () => (
-  <StyledProjects>
+  <SectionContainer>
     <h2>Personal projects</h2>
-    {projectsJson.projects.map((item) => (
-      <Project key={item.title} {...item} />
-    ))}
-  </StyledProjects>
+    <StyledProjects>
+      {projectsJson.projects.map((item) => (
+        <Project key={item.title} {...item} />
+      ))}
+    </StyledProjects>
+  </SectionContainer>
 );
 
 export default Projects;

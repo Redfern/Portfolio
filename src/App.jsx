@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, styled } from "styled-components";
 import Header from "./components/Header.jsx";
 import Jobs from "./components/Jobs.jsx";
 import Footer from "./components/Footer.jsx";
@@ -9,6 +9,11 @@ import Projects from "./components/Projects.jsx";
 import Message from "./components/Message.jsx";
 import theme from "./theme.jsx";
 
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1400px;
+`;
+
 class App extends Component {
   render() {
     return (
@@ -17,11 +22,13 @@ class App extends Component {
           <React.Fragment>
             <GlobalStyles />
             <Header />
-            <Skills />
-            <Jobs />
-            <Projects />
-            <Footer />
-            <Message />
+            <Container>
+              <Skills />
+              <Jobs />
+              <Projects />
+              <Footer />
+              <Message />
+            </Container>
           </React.Fragment>
         </ThemeProvider>
       </React.Fragment>
