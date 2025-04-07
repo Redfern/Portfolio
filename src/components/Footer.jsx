@@ -25,7 +25,7 @@ const FooterStyles = styled.div`
 
 const Footer = () => (
   <FooterStyles>
-    <h2>Contact</h2>
+    <h2>Why not get in touch?</h2>
     <div>
       <ul>
         <li>

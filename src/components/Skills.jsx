@@ -59,7 +59,7 @@ const StyledSkill = styled.div`
 const Skills = () => (
   <React.Fragment>
     <SkillsStyles>
-      <h2>Skills</h2>
+      <h2>These are some on my skills...</h2>
       {skillsJson.skills.map((item) => (
         <StyledSkill
           key={item.title}

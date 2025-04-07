@@ -8,7 +8,7 @@ const StyledJobs = styled.div`
 
 const Jobs = () => (
   <StyledJobs>
-    <h2>Work History</h2>
+    <h2>I've worked at a number of places over my career...</h2>
     {workHistory.jobs.map((item, index) => (
       <Job key={index} {...item} />
     ))}

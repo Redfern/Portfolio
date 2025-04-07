@@ -8,6 +8,7 @@ import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Message from "./components/Message.jsx";
 import theme from "./theme.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -23,6 +24,7 @@ class App extends Component {
             <GlobalStyles />
             <Header />
             <Container>
+              <AboutMe />
               <Skills />
               <Jobs />
               <Projects />

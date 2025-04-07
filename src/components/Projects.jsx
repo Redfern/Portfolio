@@ -18,7 +18,7 @@ const SectionContainer = styled.div`
 
 const Projects = () => (
   <SectionContainer>
-    <h2>Personal projects</h2>
+    <h2>In my spare time, these are some of the websites i've created...</h2>
     <StyledProjects>
       {projectsJson.projects.map((item) => (
         <Project key={item.title} {...item} />
