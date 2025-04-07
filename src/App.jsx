@@ -7,7 +7,7 @@ import GlobalStyles from "./components/styles/globalStyles.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Message from "./components/Message.jsx";
-import theme from "./theme.jsx";
+import theme from "./theme.tsx";
 import AboutMe from "./components/AboutMe.jsx";
 
 const Container = styled.div`

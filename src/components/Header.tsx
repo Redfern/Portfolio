@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Introduction from "./Introduction.jsx";
+import Introduction from "./Introduction.tsx";
 
 const HeaderStyles = styled.div`
   padding: 20px;

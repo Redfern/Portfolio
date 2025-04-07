@@ -65,7 +65,7 @@ const Skills = () => (
           key={item.title}
           data-testid={`${item.title
             .toLowerCase()
-            .replaceAll(" ", "-")}-section`}
+            .replace(/ /gi, "-")}-section`}
         >
           <div className="title">{item.title}</div>
           <div className="keywords">

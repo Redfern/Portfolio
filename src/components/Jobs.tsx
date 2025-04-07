@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Job from "./Job.jsx";
+import Job from "./Job.js";
 import workHistory from "../data/workHistory.json";
 
 const StyledJobs = styled.div`
@@ -8,7 +8,7 @@ const StyledJobs = styled.div`
 
 const Jobs = () => (
   <StyledJobs>
-    <h2>I've worked at a number of places over my career...</h2>
+    <h2>I&apos;ve worked at a number of places over my career...</h2>
     {workHistory.jobs.map((item, index) => (
       <Job key={index} {...item} />
     ))}

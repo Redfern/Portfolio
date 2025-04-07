@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import Project from "./Project.jsx";
+import Project from "./Project.js";
 import projectsJson from "../data/projects.json";
+import { IProject } from "../@types/project.js";
 
 const StyledProjects = styled.div`
   padding: 20px;
@@ -18,9 +19,11 @@ const SectionContainer = styled.div`
 
 const Projects = () => (
   <SectionContainer>
-    <h2>In my spare time, these are some of the websites i've created...</h2>
+    <h2>
+      In my spare time, these are some of the websites I&apos;ve created...
+    </h2>
     <StyledProjects>
-      {projectsJson.projects.map((item) => (
+      {projectsJson.projects.map((item: IProject) => (
         <Project key={item.title} {...item} />
       ))}
     </StyledProjects>

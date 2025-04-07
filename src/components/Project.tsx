@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { IProject } from "../@types/project";
 
 const StyledProject = styled.div`
   margin-right: 20px;
@@ -72,7 +72,7 @@ const Description = styled.div`
   padding: 0 15px;
 `;
 
-const Project = ({ title, url, description, image }) => (
+const Project = ({ title, url, description, image }: IProject) => (
   <StyledProject>
     <img src={`/static/${image}`} alt={`for project ${title}`} />
     <h3>{title}</h3>
@@ -84,12 +84,5 @@ const Project = ({ title, url, description, image }) => (
     </div>
   </StyledProject>
 );
-
-Project.propTypes = {
-  title: PropTypes.string,
-  url: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-};
 
 export default Project;

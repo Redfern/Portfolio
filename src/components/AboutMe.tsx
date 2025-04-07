@@ -17,7 +17,7 @@ const Section = styled.div`
 const AboutMe = () => {
   return (
     <Section>
-      <h2>Hi! I'm Neil...</h2>
+      <h2>Hi! I&apos;m Neil...</h2>
       <p>
         Over my career, I have worked across all aspects of the web development
         stack, including frontend, UX, design, backend using various languages,

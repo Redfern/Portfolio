@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ReactMarkdown from "react-markdown";
-import PropTypes from "prop-types";
+import { IJob } from "../@types/job";
+import { AnchorHTMLAttributes } from "react";
 
 const StyledJob = styled.div`
   padding: 20px 0 0 0;
@@ -46,7 +47,7 @@ const StyledJob = styled.div`
   }
 `;
 
-const Job = ({ title, place, years, description }) => (
+const Job = ({ title, place, years, description }: IJob) => (
   <StyledJob>
     <div className="top">
       <div className="title-place">
@@ -70,21 +71,16 @@ const Job = ({ title, place, years, description }) => (
   </StyledJob>
 );
 
-const markdownLinkRenderer = (props) => {
-  return props.href.startsWith("/") ? (
+const markdownLinkRenderer = (
+  props: AnchorHTMLAttributes<HTMLAnchorElement>
+) => {
+  return props?.href?.startsWith("/") ? (
     <a href={props.href}>{props.children}</a>
   ) : (
     <a href={props.href} target="_blank" rel="nofollow noopener noreferrer">
       {props.children}
     </a>
   );
-};
-
-Job.propTypes = {
-  title: PropTypes.string,
-  place: PropTypes.string,
-  years: PropTypes.string,
-  description: PropTypes.string,
 };
 
 export default Job;
