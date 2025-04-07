@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Job from "./Job.jsx";
 import workHistory from "../data/workHistory.json";

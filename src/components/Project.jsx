@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const StyledProject = styled.div`
   margin-right: 20px;
@@ -73,5 +73,12 @@ const Project = ({ title, url, description, image }) => (
     </div>
   </StyledProject>
 );
+
+Project.propTypes = {
+  title: PropTypes.string,
+  url: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+};
 
 export default Project;

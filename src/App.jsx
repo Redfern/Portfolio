@@ -7,7 +7,7 @@ import GlobalStyles from "./components/styles/globalStyles.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Message from "./components/Message.jsx";
-import theme from "./theme";
+import theme from "./theme.jsx";
 
 class App extends Component {
   render() {

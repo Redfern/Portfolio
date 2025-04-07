@@ -1,6 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import ReactMarkdown from "react-markdown";
+import PropTypes from "prop-types";
 
 const StyledJob = styled.div`
   padding: 20px 0 0 0;
@@ -78,6 +78,13 @@ const markdownLinkRenderer = (props) => {
       {props.children}
     </a>
   );
+};
+
+Job.propTypes = {
+  title: PropTypes.string,
+  place: PropTypes.string,
+  years: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default Job;

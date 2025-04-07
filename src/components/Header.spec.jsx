@@ -1,9 +1,9 @@
-import React from "react";
+import { expect, test, describe } from "vitest";
 import Header from "./Header";
 import renderWithTheme from "../tests/test-helpers";
 
 describe("header tests", () => {
-  it("should show my name in the header", () => {
+  test("should show my name in the header", () => {
     const { getByTestId } = renderWithTheme(<Header />);
 
     expect(getByTestId("header-title")).toBeDefined();

@@ -1,9 +1,9 @@
-import React from "react";
+import { expect, test, describe } from "vitest";
 import Job from "./Job";
 import renderWithTheme from "../tests/test-helpers";
 
 describe("job tests", () => {
-  it("should render a job with the relevant information", () => {
+  test("should render a job with the relevant information", () => {
     const { getByTestId } = renderWithTheme(
       <Job
         title="astronaut"
