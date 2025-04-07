@@ -1,3 +1,5 @@
+import { faReact, faWindows } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -12,6 +14,19 @@ const Section = styled.div`
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  svg {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .react {
+    color: #58c5dc;
+  }
+
+  .csharp {
+    color: #6b1577;
+  }
 `;
 
 const AboutMe = () => {
@@ -25,9 +40,18 @@ const AboutMe = () => {
         relations, stakeholder presentations and more.
       </p>
       <p>
-        My main skill sets are <b>React</b> and <b>C#</b> but I am very happy
-        and competent in picking up anything a project needs and don&apos;t shy
-        from anything challenging and new.
+        My main skill sets are
+        <span>
+          <FontAwesomeIcon icon={faReact} color="#58c5dc" />
+          <b className="react">React</b>
+        </span>{" "}
+        and
+        <span>
+          <FontAwesomeIcon icon={faWindows} color="#6b1577" />
+          <b className="csharp">C#</b>
+        </span>{" "}
+        but I am very happy and competent in picking up anything a project needs
+        and don&apos;t shy from anything challenging and new.
       </p>
       <p>
         I am adept at working with all teams across a business to build apps and
