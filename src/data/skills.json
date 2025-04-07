@@ -5,12 +5,12 @@
       "skills": [
         "HTML5",
         "SASS",
-        "ReactJs",
+        "React",
+        "NextJS",
         "Redux",
         "Context",
-        "Javascript",
-        "ES6",
-        "Typescript",
+        "JavaScript",
+        "TypeScript",
         "Styled Components",
         "GraphQL",
         "Blazor"
@@ -18,7 +18,7 @@
     },
     {
       "title": "Back end",
-      "skills": ["C#", "dot net core", "NodeJs", "PHP", "VB.Net"]
+      "skills": ["C#", ".NET Core", "Node", "SQL"]
     },
     {
       "title": "Mobile development",
@@ -26,42 +26,43 @@
     },
     {
       "title": "CMS",
-      "skills": ["Umbraco", "Sitecore", "Telligent", "Immediacy", "Contentful"]
+      "skills": ["Contentful", "Umbraco", "Sitecore", "Telligent", "Immediacy"]
     },
     {
       "title": "Infrastructure / Cloud",
       "skills": [
-        "AWS (Elastic Beanstalk, Lambda, Cloud Formation, EC2, S3, Api Gateway)",
+        "AWS",
         "Azure",
         "GitHub Actions",
         "Jenkins",
         "TeamCity",
-        "GO CD",
-        "Circle CI"
+        "Terraform",
+        "Circle CI",
+        "Docker"
       ]
     },
     {
-      "title": "OS",
-      "skills": ["Windows", "OSX", "Linux"]
-    },
-    {
       "title": "Tools",
-      "skills": ["Jira", "Mingle", "Trello", "Physical Kanban Board"]
+      "skills": ["Jira", "Trello", "Physical Kanban Board", "Notion", "Figma"]
     },
     {
       "title": "Working",
       "skills": [
-        "XP",
         "Mob programming",
         "Pair programming",
         "Agile",
         "TDD",
+        "E2E Testing",
         "Git"
       ]
     },
     {
-      "title": "E2E Testing",
-      "skills": ["Playwright", "Cypress", "Selenium", "TestCafe"]
+      "title": "Testing",
+      "skills": [
+        "E2E testing with Playwright and Cypress",
+        "Unit Testing with Jest and NUnit",
+        "React Testing Library for component testing"
+      ]
     }
   ]
 }

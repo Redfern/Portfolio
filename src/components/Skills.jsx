@@ -61,7 +61,12 @@ const Skills = () => (
     <SkillsStyles>
       <h2>Skills</h2>
       {skillsJson.skills.map((item) => (
-        <StyledSkill key={item.title}>
+        <StyledSkill
+          key={item.title}
+          data-testid={`${item.title
+            .toLowerCase()
+            .replaceAll(" ", "-")}-section`}
+        >
           <div className="title">{item.title}</div>
           <div className="keywords">
             <ul>
