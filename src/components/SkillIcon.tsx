@@ -202,7 +202,7 @@ const items: ItemsMap = {
   },
   tdd: {
     icon: faFlask,
-    colour: "#000000",
+    colour: "#5bb545",
   },
   "e2e testing": {
     icon: faFlask,
@@ -210,7 +210,7 @@ const items: ItemsMap = {
   },
   agile: {
     icon: faArrowRotateRight,
-    colour: "#000000",
+    colour: "#f05e03",
   },
   "mob programming": {
     icon: faUsers,
@@ -222,11 +222,11 @@ const items: ItemsMap = {
   },
   "e2e testing with playwright and cypress": {
     icon: faFlaskVial,
-    colour: "#000000",
+    colour: "#5bb545",
   },
   "unit testing with jest and nunit": {
     icon: faFlaskVial,
-    colour: "#000000",
+    colour: "#00590c",
   },
   "react testing library for component testing": {
     icon: faReact,

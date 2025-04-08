@@ -18,7 +18,7 @@
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "vitest",
+    "test": "vitest run",
     "cy:run": "cross-env cypress run",
     "cy:open": "cross-env cypress open",
     "cy:chrome": "cross-env cypress run --browser chrome --headless",
