@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import skillsJson from "../data/skills.json";
+import SkillIcon from "./SkillIcon";
 
 const SkillsStyles = styled.div`
   padding: 20px;
@@ -8,10 +9,15 @@ const SkillsStyles = styled.div`
 
 const StyledSkill = styled.div`
   margin-bottom: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  display: block;
+
+  @media ${(props) => props.theme.bootstrapBreakpoints.large} {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   .title {
     font-weight: bold;
@@ -19,63 +25,42 @@ const StyledSkill = styled.div`
     font-size: 18px;
     text-align: right;
     margin-bottom: 10px;
-
-    flex-basis: 100%;
-
-    @media ${(props) => props.theme.bootstrapBreakpoints.medium} {
-      flex-basis: 30%;
-    }
-  }
-
-  .keywords {
-    flex-basis: 100%;
-
-    @media ${(props) => props.theme.bootstrapBreakpoints.medium} {
-      flex-basis: 65%;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      li {
-        float: left;
-        margin-right: 10px;
-
-        &:after {
-          content: ", ";
-        }
-
-        &:last-of-type {
-          &:after {
-            content: " ";
-          }
-        }
-      }
-    }
   }
 `;
+
+const Listing = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+`;
+
+const ListingItem = styled.div``;
 
 const Skills = () => (
   <React.Fragment>
     <SkillsStyles>
       <h2>These are some of my skills...</h2>
       {skillsJson.skills.map((item) => (
-        <StyledSkill
-          key={item.title}
-          data-testid={`${item.title
-            .toLowerCase()
-            .replace(/ /gi, "-")}-section`}
-        >
-          <div className="title">{item.title}</div>
-          <div className="keywords">
-            <ul>
-              {item.skills.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-        </StyledSkill>
+        <>
+          <StyledSkill
+            key={item.title}
+            data-testid={`${item.title
+              .toLowerCase()
+              .replace(/ /gi, "-")}-section`}
+          >
+            <div className="title">{item.title}</div>
+            <div className="keywords">
+              <Listing>
+                {item.skills.map((skill: string) => (
+                  <ListingItem key={skill}>
+                    <SkillIcon name={skill} />
+                  </ListingItem>
+                ))}
+              </Listing>
+            </div>
+          </StyledSkill>
+        </>
       ))}
     </SkillsStyles>
   </React.Fragment>

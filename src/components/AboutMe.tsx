@@ -1,6 +1,7 @@
 import { faReact, faWindows } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import SkillIcon from "./SkillIcon";
 
 const Section = styled.div`
   padding: 20px;
@@ -41,15 +42,9 @@ const AboutMe = () => {
       </p>
       <p>
         My main skill sets are
-        <span>
-          <FontAwesomeIcon icon={faReact} color="#58c5dc" />
-          <b className="react">React</b>
-        </span>{" "}
+        <SkillIcon name="React" />
         and
-        <span>
-          <FontAwesomeIcon icon={faWindows} color="#6b1577" />
-          <b className="csharp">C#</b>
-        </span>{" "}
+        <SkillIcon name="C#" />
         but I am very happy and competent in picking up anything a project needs
         and don&apos;t shy from anything challenging and new.
       </p>
