@@ -1,5 +1,3 @@
-import { faReact, faWindows } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import SkillIcon from "./SkillIcon";
 
@@ -32,8 +30,8 @@ const Section = styled.div`
 
 const AboutMe = () => {
   return (
-    <Section>
-      <h2>Hi! I&apos;m Neil...</h2>
+    <Section data-testid="aboutme-section">
+      <h2 data-testid="aboutme-title">Hi! I&apos;m Neil...</h2>
       <p>
         Over my career, I have worked across all aspects of the web development
         stack, including frontend, UX, design, backend using various languages,

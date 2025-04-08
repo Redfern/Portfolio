@@ -30,6 +30,7 @@ import {
   faFlaskVial,
   faMobileScreen,
   faNewspaper,
+  faServer,
   faUserGroup,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
@@ -231,6 +232,10 @@ const items: ItemsMap = {
   "react testing library for component testing": {
     icon: faReact,
     colour: "#58c5dc",
+  },
+  "ci / cd": {
+    icon: faServer,
+    colour: "#82ae3a",
   },
 };
 

@@ -9,6 +9,7 @@ import Projects from "./components/Projects.jsx";
 import Message from "./components/Message.jsx";
 import theme from "./theme.tsx";
 import AboutMe from "./components/AboutMe.jsx";
+import YearsExperience from "./components/YearsExperience.jsx";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -25,6 +26,7 @@ class App extends Component {
             <Header />
             <Container>
               <AboutMe />
+              <YearsExperience />
               <Skills />
               <Jobs />
               <Projects />

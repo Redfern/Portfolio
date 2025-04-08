@@ -51,7 +51,7 @@ const ListingItem = styled.div`
 const Skills = () => (
   <React.Fragment>
     <SkillsStyles>
-      <h2>These are some of my skills...</h2>
+      <h2>Here is a more complete list of my skill set...</h2>
       {skillsJson.skills.map((item) => (
         <>
           <StyledSkill
