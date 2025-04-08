@@ -35,7 +35,18 @@ const Listing = styled.div`
   margin-bottom: 20px;
 `;
 
-const ListingItem = styled.div``;
+const ListingItem = styled.div`
+  &:after {
+    content: " - ";
+    opacity: 0.5;
+  }
+
+  &:last-of-type {
+    &:after {
+      content: " ";
+    }
+  }
+`;
 
 const Skills = () => (
   <React.Fragment>
