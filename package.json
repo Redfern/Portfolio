@@ -22,8 +22,9 @@
     "cy:run": "cross-env cypress run",
     "cy:open": "cross-env cypress open",
     "cy:chrome": "cross-env cypress run --browser chrome --headless",
+    "cy:electron": "cross-env cypress run --browser electron --headless",
     "cy:start": "cross-env npm run start",
-    "cy:test": "cross-env START_SERVER_AND_TEST_INSECURE=1 start-test cy:start http://localhost:5173 cy:chrome"
+    "cy:test": "cross-env START_SERVER_AND_TEST_INSECURE=1 start-test cy:start http://localhost:5173 cy:electron"
   },
   "eslintConfig": {
     "extends": "react-app"
