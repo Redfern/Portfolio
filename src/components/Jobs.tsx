@@ -4,6 +4,7 @@ import workHistory from "../data/workHistory.json";
 
 const StyledJobs = styled.div`
   padding: 20px;
+  padding-bottom: 0;
 `;
 
 const Jobs = () => (

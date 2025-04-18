@@ -27,10 +27,9 @@ const Item = styled.div<{ width: string }>`
     border-radius: 20px;
   }
 
-  &:nth-child(odd) {
-    .left-pill {
-      background-color: white;
-    }
+  &:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .info {

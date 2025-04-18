@@ -5,11 +5,16 @@ import SkillIcon from "./SkillIcon";
 
 const SkillsStyles = styled.div`
   padding: 20px;
+  padding-bottom: 0;
 `;
 
 const StyledSkill = styled.div`
   margin-bottom: 10px;
   display: block;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   @media ${(props) => props.theme.bootstrapBreakpoints.large} {
     display: grid;
