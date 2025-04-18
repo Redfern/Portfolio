@@ -6,7 +6,10 @@ describe("homepage tests", () => {
     cy.visit("http://localhost:5173");
 
     cy.getByTestId("header-title").should("have.text", "Neil Redfern");
-    cy.getByTestId("header-tagline").should("have.text", "Software Developer");
+    cy.getByTestId("header-tagline").should(
+      "have.text",
+      "Senior Full Stack Software Developer"
+    );
   });
 
   it("should show the skills section", () => {

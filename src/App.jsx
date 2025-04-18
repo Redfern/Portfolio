@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-import { ThemeProvider, styled } from "styled-components";
+import { ThemeProvider, styled, StyleSheetManager } from "styled-components";
+import { Routes, Route, BrowserRouter } from "react-router";
 import Header from "./components/Header.jsx";
-import Jobs from "./components/Jobs.jsx";
-import Footer from "./components/Footer.jsx";
 import GlobalStyles from "./components/styles/globalStyles.jsx";
-import Skills from "./components/Skills.jsx";
-import Projects from "./components/Projects.jsx";
-import Message from "./components/Message.jsx";
 import theme from "./theme.tsx";
-import AboutMe from "./components/AboutMe.jsx";
-import YearsExperience from "./components/YearsExperience.jsx";
+import HomePage from "./pages/HomePage.tsx";
+import NotFound from "./pages/NotFound.tsx";
+import CV from "./pages/CV.tsx";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -25,13 +22,17 @@ class App extends Component {
             <GlobalStyles />
             <Header />
             <Container>
-              <AboutMe />
-              <YearsExperience />
-              <Skills />
-              <Jobs />
-              <Projects />
-              <Footer />
-              <Message />
+              <BrowserRouter
+                future={{
+                  v7_relativeSplatPath: true,
+                }}
+              >
+                <Routes>
+                  <Route exact path="/" element={<HomePage />} />
+                  <Route exact path="/cv" element={<CV />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </BrowserRouter>
             </Container>
           </React.Fragment>
         </ThemeProvider>

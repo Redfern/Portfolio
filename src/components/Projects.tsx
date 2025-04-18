@@ -20,7 +20,7 @@ const SectionContainer = styled.div`
 const Projects = () => (
   <SectionContainer>
     <h2>
-      In my spare time, these are some of the websites I&apos;ve created...
+    In my spare time, these are some of the websites I&apos;ve created...
     </h2>
     <StyledProjects>
       {projectsJson.projects.map((item: IProject) => (

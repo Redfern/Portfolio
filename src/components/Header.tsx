@@ -34,7 +34,7 @@ const Header = () => (
     <HeaderStyles>
       <h1 data-testid="header-title">Neil Redfern</h1>
       <div className="tag-line" data-testid="header-tagline">
-        Software Developer
+        Senior Full Stack Software Developer
       </div>
       <Introduction />
     </HeaderStyles>

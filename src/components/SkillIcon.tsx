@@ -38,10 +38,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 interface StyledSkillIcon_Props {
-  colour: string;
+  $colour: string;
 }
 
-const StyledSkillIcon = styled.div<StyledSkillIcon_Props>`
+const StyledSkillIcon = styled.span<StyledSkillIcon_Props>`
   display: inline-block;
   margin-right: 5px;
 
@@ -49,7 +49,7 @@ const StyledSkillIcon = styled.div<StyledSkillIcon_Props>`
     margin-right: 5px;
   }
 
-  color: ${(props) => props.colour};
+  color: ${(props) => props.$colour};
 `;
 
 interface ItemsMap {
@@ -244,13 +244,17 @@ const SkillIcon = ({ name }: { name: string }) => {
 
   if (item != null) {
     return (
-      <StyledSkillIcon colour={item.colour}>
-        <FontAwesomeIcon icon={item.icon} color={item.colour} />
-        <span>{name}</span>
+      <StyledSkillIcon $colour={item.colour}>
+        <FontAwesomeIcon
+          icon={item.icon}
+          color={item.colour}
+          data-testid="skill-icon"
+        />
+        <span data-testid="skill-icon-name">{name}</span>
       </StyledSkillIcon>
     );
   } else {
-    return <StyledSkillIcon colour="#676767">{name}</StyledSkillIcon>;
+    return <StyledSkillIcon $colour="#676767">{name}</StyledSkillIcon>;
   }
 };
 

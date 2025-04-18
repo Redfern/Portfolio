@@ -9,6 +9,8 @@ describe("header tests", () => {
     expect(getByTestId("header-title")).toBeDefined();
     expect(getByTestId("header-title").innerHTML).toBe("Neil Redfern");
     expect(getByTestId("header-tagline")).toBeDefined();
-    expect(getByTestId("header-tagline").innerHTML).toBe("Software Developer");
+    expect(getByTestId("header-tagline").innerHTML).toBe(
+      "Senior Full Stack Software Developer"
+    );
   });
 });

@@ -53,25 +53,23 @@ const Skills = () => (
     <SkillsStyles>
       <h2>Here is a more complete list of my skill set...</h2>
       {skillsJson.skills.map((item) => (
-        <>
-          <StyledSkill
-            key={item.title}
-            data-testid={`${item.title
-              .toLowerCase()
-              .replace(/ /gi, "-")}-section`}
-          >
-            <div className="title">{item.title}</div>
-            <div className="keywords">
-              <Listing>
-                {item.skills.map((skill: string) => (
-                  <ListingItem key={skill}>
-                    <SkillIcon name={skill} />
-                  </ListingItem>
-                ))}
-              </Listing>
-            </div>
-          </StyledSkill>
-        </>
+        <StyledSkill
+          key={item.title}
+          data-testid={`${item.title
+            .toLowerCase()
+            .replace(/ /gi, "-")}-section`}
+        >
+          <div className="title">{item.title}</div>
+          <div className="keywords">
+            <Listing>
+              {item.skills.map((skill: string) => (
+                <ListingItem key={skill}>
+                  <SkillIcon name={skill} />
+                </ListingItem>
+              ))}
+            </Listing>
+          </div>
+        </StyledSkill>
       ))}
     </SkillsStyles>
   </React.Fragment>
