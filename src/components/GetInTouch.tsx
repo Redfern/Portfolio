@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLink, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
@@ -54,6 +54,16 @@ const GetInTouchFooter = () => (
             target="_blank"
           >
             https://uk.linkedin.com/in/neilredfern
+          </a>
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faLink} />{" "}
+          <a
+            href="https://www.neil-redfern.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            https://www.neil-redfern.com
           </a>
         </li>
       </ul>
