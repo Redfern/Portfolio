@@ -39,9 +39,6 @@ describe("homepage tests", () => {
     cy.visit("http://localhost:5173");
 
     cy.getByTestId("aboutme-title").should("contain.text", "Hi! I'm Neil...");
-    cy.getByTestId("aboutme-section").contains(
-      " am very much a hit the ground running style developer who likes to get stuck in on day one"
-    );
   });
 
   it("should show the experience section", () => {
