@@ -47,29 +47,31 @@ const StyledJob = styled.div`
   }
 `;
 
-const Job = ({ title, place, years, description }: IJob) => (
-  <StyledJob>
-    <div className="top">
-      <div className="title-place">
-        <span className="title" data-testid="job-title">
-          {title}
-        </span>
-        <span> - </span>
-        <span className="place" data-testid="job-place">
-          {place}
-        </span>
+const Job = ({ title, place, years, description }: IJob) => {
+  return (
+    <StyledJob>
+      <div className="top">
+        <div className="title-place">
+          <span className="title" data-testid="job-title">
+            {title}
+          </span>
+          <span> - </span>
+          <span className="place" data-testid="job-place">
+            {place}
+          </span>
+        </div>
+        <div className="years" data-testid="job-years">
+          {years}
+        </div>
       </div>
-      <div className="years" data-testid="job-years">
-        {years}
+      <div className="description" data-testid="job-description">
+        <ReactMarkdown components={{ a: markdownLinkRenderer }}>
+          {description}
+        </ReactMarkdown>
       </div>
-    </div>
-    <div className="description" data-testid="job-description">
-      <ReactMarkdown components={{ a: markdownLinkRenderer }}>
-        {description}
-      </ReactMarkdown>
-    </div>
-  </StyledJob>
-);
+    </StyledJob>
+  );
+};
 
 const markdownLinkRenderer = (
   props: AnchorHTMLAttributes<HTMLAnchorElement>
