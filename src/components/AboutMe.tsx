@@ -42,9 +42,8 @@ const AboutMe = () => {
         My main skill sets are
         <SkillIcon name="React" />
         and
-        <SkillIcon name="C#" />, #, but I am very happy, and competent at,
-        adapting to project needs and I don&apos;t shy from anything challenging
-        and new.
+        <SkillIcon name="C#" />, but I am very happy, and competent at, adapting
+        to project needs and I don&apos;t shy from anything challenging and new.
       </p>
       <p>
         I am adept at working with all teams across a business to build apps and
