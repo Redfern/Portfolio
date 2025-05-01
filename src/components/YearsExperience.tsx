@@ -8,16 +8,18 @@ const Section = styled.div`
 
 const Item = styled.div<{ width: string }>`
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: 180px 1fr;
   background-color: #383838;
   border-radius: 20px;
   color: white;
   margin-bottom: 15px;
   width: 100%;
+  font-size: 14px;
 
   @media ${(props) => props.theme.bootstrapBreakpoints.medium} {
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 220px 1fr;
     width: ${(props) => props.width};
+    font-size: 16px;
   }
 
   .left-pill {
@@ -69,15 +71,9 @@ const YearsExperience = () => {
           </div>
           <div className="info">15+ years over all roles</div>
         </Item>
-        <Item width={"60%"}>
-          <div className="left-pill">
-            <SkillIcon name="E2E Testing" />
-          </div>
-          <div className="info">6 years over 4 roles</div>
-        </Item>
         <Item width={"80%"}>
           <div className="left-pill">
-            <SkillIcon name="TDD" />
+            <SkillIcon name="Unit / E2E Testing" />
           </div>
           <div className="info">9 years over 7 roles</div>
         </Item>
@@ -91,7 +87,13 @@ const YearsExperience = () => {
           <div className="left-pill">
             <SkillIcon name="Agile" />
           </div>
-          <div className="info">9 years over 8 roles</div>
+          <div className="info">9 years over 7 roles</div>
+        </Item>
+        <Item width={"80%"}>
+          <div className="left-pill">
+            <SkillIcon name="Cloud (AWS / Azure)" />
+          </div>
+          <div className="info">9 years over 7 roles</div>
         </Item>
       </Container>
     </Section>

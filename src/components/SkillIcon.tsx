@@ -237,6 +237,14 @@ const items: ItemsMap = {
     icon: faServer,
     colour: "#82ae3a",
   },
+  "unit / e2e testing": {
+    icon: faFlaskVial,
+    colour: "#00590c",
+  },
+  "cloud (aws / azure)": {
+    icon: faAws,
+    colour: "#f79403",
+  },
 };
 
 const SkillIcon = ({ name }: { name: string }) => {
