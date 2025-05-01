@@ -3,4 +3,5 @@ export interface IJob {
   place: string;
   years: string;
   description: string;
+  employmentType: string;
 }

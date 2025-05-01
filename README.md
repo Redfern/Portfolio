@@ -6,6 +6,18 @@ React, Vite, Styled Components, React Testing Library for Component testing and 
 
 ## How to run
 
+You will need to create a .env.local file in the root of this project via:
+
+```bash
+$ touch .env.local
+```
+
+Then fill that with the needed environment variables:
+
+```
+VITE_API_URL=http://localhost:3000
+```
+
 `npm start` - this will run the website locally on http://localhost:5173
 
 ## How to build
